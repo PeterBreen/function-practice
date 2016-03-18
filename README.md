@@ -6,6 +6,8 @@ This repo contains an index.html and an app.js which allows for the following fu
 * sum()
 * multiply()
 * sumAndMultiply()
+* sumArray()
+* multiplyArray()
 
 ## Functions available
 ###sum(n1,n2)
