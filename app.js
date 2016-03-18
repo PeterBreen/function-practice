@@ -12,7 +12,7 @@ var multiply = function(multiplyNumber1, multiplyNumber2) {
   //console.log('The product of ' + multiplyNumber1 + ' and ' + multiplyNumber2 + ' is ' + multiplyTotal + '.');
 };
 
-//problem 3 - sum and multiply function. comments out console log for sum() and multiply()
+//problem 3 - sum and multiply function.
 var sumAndMultiply = function(samNumber1, samNumber2, samNumber3) {
   samSum = sum((sum(samNumber1, samNumber2)), samNumber3);
   samProduct = multiply((multiply(samNumber1, samNumber2)), samNumber3);
@@ -29,4 +29,14 @@ var sumArray = function(inputSumArray) {
     outputSumArray += inputSumArray[i];
   }
   console.log(inputSumArray + ' was passed in as an array of numbers and ' + outputSumArray + ' is their sum.');
+};
+
+//problem 5 - product of an array
+var multiplyArray = function(inputProductArray) {
+  var outputProductArray = 1;
+  console.table(inputProductArray);
+  for (var i = 0; i < inputProductArray.length; i++) {
+    outputProductArray *= inputProductArray[i];
+  }
+  console.log('The numbers ' + inputProductArray + ' have a product of ' + outputProductArray + '.');
 };

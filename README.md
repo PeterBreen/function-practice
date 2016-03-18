@@ -6,6 +6,8 @@ This repo contains an index.html and an app.js which allows for the following fu
 * sum()
 * multiply()
 * sumAndMultiply()
+* sumArray()
+* multiplyArray()
 
 ## Functions available
 ###sum(n1,n2)
@@ -26,8 +28,14 @@ sumAndMultiply() takes three numbers, (n1, n2, n3) as parameters, and returns bo
 __Example:__
 `sumAndMultiply(4,5,6)` will console.log "4 and 5 and 6 sum to 15." and "The numbers 4 and 5 and 6 have a product of 120." as well as returning an array consisting of [sum, product] - e.g. `[15, 120]`
 
-###sumArray([n1,n2, ... nWhatever])
+###sumArray([n1,n2, ... nX])
 sumArray() takes a single array of numbers as a parameter and console.tables the array, adds the values of each index in the array together, and reports the summed total via console.log.
 
 __Example:__
 `sumArray([1,2,3,4,5])` will return a console.table of [1,2,3,4,5] as well as console.logging "1,2,3,4,5 was passed in as an array of numbers and 15 is their sum."
+
+###multiplyArray([n1, n2, ... nX])
+multiplyArray() takes a single array of numbers as a parameter and console.tables the array, and then console.logs the product of the values in the array.
+
+__Example:__
+`multiplyArray([2,3,4,5])` will return a console.table of [2,3,4,5] as well as console.logging "The numbers 2,3,4 have a product of 24."
