@@ -30,3 +30,13 @@ var sumArray = function(inputSumArray) {
   }
   console.log(inputSumArray + ' was passed in as an array of numbers and ' + outputSumArray + ' is their sum.');
 };
+
+//problem 5 - multiply array
+var multiplyArray = function(inputProductArray) {
+  var outputProductArray = 1;
+  console.table(inputProductArray);
+  for (var i = 0; i < inputProductArray.length; i++) {
+    outputProductArray *= inputProductArray[i];
+  }
+  console.log('The numbers ' + inputProductArray + ' have a product of ' + outputProductArray + '.');
+};
