@@ -14,29 +14,29 @@ var multiply = function(multiplyNumber1, multiplyNumber2) {
 
 //problem 3 - sum and multiply function.
 var sumAndMultiply = function(samNumber1, samNumber2, samNumber3) {
-  samSum = sum((sum(samNumber1, samNumber2)), samNumber3);
+  samSum = sum(sum(samNumber1, samNumber2), samNumber3);
   samProduct = multiply((multiply(samNumber1, samNumber2)), samNumber3);
   console.log(samNumber1 + ' and ' + samNumber2 + ' and ' + samNumber3 + ' sum to ' + samSum + '.');
   console.log('The numbers ' + samNumber1 + ' and ' + samNumber2 + ' and ' + samNumber3 + ' have a product of ' + samProduct + '.');
-  return [samSum, samProduct];
+  return {sum: samSum, product: samProduct};
 };
 
 //problem 4 - sum of an array
 var sumArray = function(inputSumArray) {
-  var outputSumArray = 0;
-  console.table(inputSumArray);
+  var outputSum = 0;
   for (var i = 0; i < inputSumArray.length; i++) {
-    outputSumArray += inputSumArray[i];
+    outputSum += inputSumArray[i];
   }
-  console.log(inputSumArray + ' was passed in as an array of numbers and ' + outputSumArray + ' is their sum.');
+  console.table(inputSumArray);
+  console.log(inputSumArray + ' was passed in as an array of numbers and ' + outputSum + ' is their sum.');
 };
 
 //problem 5 - product of an array
 var multiplyArray = function(inputProductArray) {
-  var outputProductArray = 1;
-  console.table(inputProductArray);
+  var outputProduct = 1;
   for (var i = 0; i < inputProductArray.length; i++) {
-    outputProductArray *= inputProductArray[i];
+    outputProduct *= inputProductArray[i];
   }
-  console.log('The numbers ' + inputProductArray + ' have a product of ' + outputProductArray + '.');
+  console.table(inputProductArray);
+  console.log('The numbers ' + inputProductArray + ' have a product of ' + outputProduct + '.');
 };
